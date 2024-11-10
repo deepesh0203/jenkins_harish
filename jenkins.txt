@@ -1,0 +1,17 @@
+pipeline {
+  agent any
+  stages {
+    stage('version') {
+      steps {
+	echo 'Stage Version'
+        
+      }
+    }
+    stage('hello') {
+      steps {
+	echo 'Stage Hello'
+        bat 'python hello.py'
+      }
+    }
+  }
+}
