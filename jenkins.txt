@@ -10,7 +10,7 @@ pipeline {
     stage('hello') {
       steps {
 	echo 'Stage Hello'
-        bat 'python hello.py'
+        sh 'python hello.py'
       }
     }
   }
