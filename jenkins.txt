@@ -10,8 +10,8 @@ pipeline {
     stage('hello') {
       steps {
 	echo 'Stage Hello'
-        bat 'python hello.py'
-      }
-    }
-  }
+        bat 'python HelloWorld.py'
+      }
+    }
+  }
 }
