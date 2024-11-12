@@ -10,7 +10,8 @@ pipeline {
     stage('hello') {
       steps {
 	echo 'Stage Hello'
-        sh 'docker run -d -p 5000:5000 flask-rest-api'
+        sh 'javac Test.java'
+	sh 'java Test'
       }
     }
   }
