@@ -3,7 +3,7 @@ pipeline {
     parameters {
         string(name: 'NUM1', defaultValue: '5', description: 'First number')
         string(name: 'NUM2', defaultValue: '10', description: 'Second number')
-        string(name: 'operation', defaultValue: 'add', description: 'Addition')
+        string(name: 'operation', defaultValue: 'add', description: 'Enter operation')
     }
     stages {
         stage('Setup Python Environment') {
