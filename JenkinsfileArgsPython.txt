@@ -3,6 +3,7 @@ pipeline {
     parameters {
         string(name: 'NUM1', defaultValue: '5', description: 'First number')
         string(name: 'NUM2', defaultValue: '10', description: 'Second number')
+        string(name: 'operation', defaultValue: 'add', description: 'Addition')
     }
     stages {
         stage('Setup Python Environment') {
@@ -17,7 +18,7 @@ pipeline {
             steps {
                 script {
                     // Pass arguments to the Python script
-                    bat "python Add.py ${params.NUM1} ${params.NUM2}"
+                    bat "python Add.py ${params.NUM1} ${params.NUM2} ${params.operation}"
                 }
             }
         }
