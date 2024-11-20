@@ -12,11 +12,11 @@ def main():
         if op=="add":
             print(f"The sum is: {num1 + num2}")
         elif op=="sub":
-            print(f"The sum is: {num1 - num2}")
+            print(f"The diff is: {num1 - num2}")
         elif op=="mul":
-            print(f"The sum is: {num1 * num2}")
+            print(f"The prod is: {num1 * num2}")
         elif op=="div":
-            print(f"The sum is: {num1 / num2}")
+            print(f"The quotient is: {num1 / num2}")
     except ValueError:
         print("Error: Please provide valid numbers.")
 
